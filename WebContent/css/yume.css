@@ -1,25 +1,40 @@
 @CHARSET "UTF-8";
 
+/* CSS associated with the layout */
 table.layout {
+	margin: 20px 80px auto;
+	width: 75%;
+	/*
 	background-color: #F00;
 	border: 1px solid;
 	border-radius: 5px;
-	margin: 20px 80px auto;
-	width: 75%;
+	*/
 }
 table.layout td.left {
 	width: 100px;
 	vertical-align: top;
 }
 table.layout td.right {
+	vertical-align: top;
+	/*
 	background-color: #0F0;
-	vertical-align: top;	
+	*/
 }
 
+/* CSS associated with the header */
+.header {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	/*
+	background-color: #00F;
+	*/
+}
 .header .tabs {
 	color: #eee;
 	font-size: 2.0em;
 	font-weight: bold;
+	align: center;
 }
 .header .tabs ul{
 	list-style: none outside none;
@@ -33,12 +48,37 @@ table.layout td.right {
 	cursor: pointer;
 	text-align: center;
 }
-.tabs li.current{
-	background-image: url("./imag/halo.png");
+.header .tabs li a {
+	display:block;
+	text-decoration: none;
+	color: #ddd;
+	height: 25px;
+	width: 150px;
+	line-height:25px;
+}
+.header .tabs li a:hover {
+	background: url("../img/haze_blue.png") center top no-repeat;
 }
 
-
+/* CSS associated with the content */
+.content {
+	min-height: 500px;
+	background-color: #F8F8F4;
+	border: 1px solid #D4D4D2;
+	border-radius: 2px;
+}
 .content div#health { display: none }
 .content div#fitness { display: none }
 .content div#community { display: none }
 .content div#about { display: none }
+
+/* CSS associated with the footer */
+.footer {
+	font-size: 0.9em;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	/*
+	background-color: #FF0;
+	*/
+}
