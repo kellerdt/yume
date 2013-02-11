@@ -1,5 +1,12 @@
 @CHARSET "UTF-8";
 
+body {
+	background: #F2F4F4 url("../img/backgrounds/clouds.jpg") no-repeat center top;
+	background-size: 100% auto;
+	background-image: url("../img/backgrounds/clouds.jpg");
+	background-color: #F2F4F4;
+}
+
 /* CSS associated with the layout */
 table.layout {
 	margin: 20px 80px auto;
@@ -51,7 +58,7 @@ table.layout td.right {
 .header .tabs li a {
 	display:block;
 	text-decoration: none;
-	color: #ddd;
+	color: #9898A8;
 	height: 25px;
 	width: 150px;
 	line-height:25px;
@@ -66,6 +73,7 @@ table.layout td.right {
 	background-color: #F8F8F4;
 	border: 1px solid #D4D4D2;
 	border-radius: 2px;
+	padding: 2px;
 }
 .content div#health { display: none }
 .content div#fitness { display: none }
