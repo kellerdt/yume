@@ -28,6 +28,36 @@ table.layout td.right {
 	*/
 }
 
+/* CSS associated with the navigation */
+.navigation .tabs {
+	color: #eee;
+	font-size: 2.0em;
+	font-weight: bold;
+	align: center;
+}
+.navigation .tabs ul{
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+.navigation .tabs li {
+	padding: 5px 5px;
+	margin: 0px 5px;
+	cursor: pointer;
+	text-align: center;
+}
+.navigation .tabs li a {
+	display:block;
+	text-decoration: none;
+	color: #9898A8;
+	height: 25px;
+	width: 150px;
+	line-height:25px;
+}
+.navigation .tabs li a:hover {
+	background: url("../img/haze_blue.png") center top no-repeat;
+}
+
 /* CSS associated with the header */
 .header {
 	margin: 0 auto;
@@ -37,35 +67,6 @@ table.layout td.right {
 	background-color: #00F;
 	*/
 }
-.header .tabs {
-	color: #eee;
-	font-size: 2.0em;
-	font-weight: bold;
-	align: center;
-}
-.header .tabs ul{
-	list-style: none outside none;
-	margin: 0;
-	padding: 0;
-}
-.header .tabs li {
-	display: inline-block;
-	padding: 5px 5px;
-	margin: 0px 5px;
-	cursor: pointer;
-	text-align: center;
-}
-.header .tabs li a {
-	display:block;
-	text-decoration: none;
-	color: #9898A8;
-	height: 25px;
-	width: 150px;
-	line-height:25px;
-}
-.header .tabs li a:hover {
-	background: url("../img/haze_blue.png") center top no-repeat;
-}
 
 /* CSS associated with the content */
 .content {
@@ -74,6 +75,10 @@ table.layout td.right {
 	border: 1px solid #D4D4D2;
 	border-radius: 2px;
 	padding: 2px;
+}
+.content div#home {
+	margin: 10 auto;
+	text-align: center;
 }
 .content div#health { display: none }
 .content div#fitness { display: none }

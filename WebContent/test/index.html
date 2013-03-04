@@ -3,21 +3,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>YumeFitness</title>
-<script type="text/javascript" src="./js/jquery-1.7.2.js"></script>
-<script type="text/javascript" src="./js/yume.js"></script>
-<link rel="stylesheet" media="screen" href="./css/yume.css"/>
+<script type="text/javascript" src="../js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="../js/yume.js"></script>
+<link rel="stylesheet" media="screen" href="../css/yume.css"/>
 </head>
 <body>
 <table class="layout">
 <tr>
 <td class="left">
-<div id="logo">
-	<img class="logo" src="./img/yume_blue.png" width="200px" height="200px"/>
-</div>
-</td>
-<td class="right">
-<div class="header">
-	<img class="title" src="./img/title_segoescript.png"/>
+<div class="navigation">
+	<a href="">
+		<img class="logo" src="../img/yume_blue.png" width="200px" height="200px"/>
+	</a>
 	<nav class="tabs">
 		<ul id="tablinks">
 			<li contentId="health"><a href="#" class="tabspan">Health</a></li>
@@ -27,8 +24,21 @@
 		</ul>
 	</nav>
 </div>
+</td>
+<td class="right">
+<div class="header">
+	<img class="title" src="../img/title_segoescript.png"/>
+</div>
 <hr/>
 <div class="content">
+	<div id="home" class="contentBody">
+		<!-- <video width="320" height="240" controls autoplay poster="video.jpg"> -->
+		<video width="640" height="480" controls>
+			<source src="../video/test.mp4" type="video/mp4" />
+			<!-- <source src="movie.ogg" type="video/ogg" /> -->
+			Your browser does not support the video tag.
+		</video>
+	</div>
 	<div id="health" class="contentBody">
 		<p>Health content</p>
 		<p>Health content</p>
