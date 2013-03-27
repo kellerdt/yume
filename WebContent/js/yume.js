@@ -15,6 +15,6 @@ $(function() {
 		tab.addClass("current");
 		
 		$('.contentBody').hide();
-		$('div#' + tab.attr('contentId')).show();
+		$('div#' + tab.attr('data-contentId')).show();
 	}
 });
