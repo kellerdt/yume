@@ -5,16 +5,33 @@ $(function() {
 	var date = new Date();
 	$('div.footer span#date').html(months[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear());
 	
-	$('#tablinks > li').click(function() {
+	/* Navigation Javascript */
+	$('span.tabspan').click(function() {
 		navigateTabs($(this));
 	});
-	/*navigateTabs($('#tablinks > li').eq(0));*/
-	
 	function navigateTabs(tab) {
-		$("#tablinks > li").removeClass("current");
+		$("span.tabspan").removeClass("current");
 		tab.addClass("current");
 		
 		$('.contentBody').hide();
-		$('div#' + tab.attr('data-contentId')).show();
+		$('div#' + tab.attr('data-tabId')).show();
 	}
+	
+	/* Video Javascript */
+	$('video#intro').click(function() {
+		var status = $(this).status;
+		if(status == 'play') {
+			$(this).status = 'pause';
+			this.pause();
+		} else {
+			$(this).status = 'play';
+			this.play();
+		}
+	});
+	$('div#content div#video').show();
+	
+	/* PrettyPhoto Javascript */
+	$(document).ready(function(){
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
 });
